@@ -1,0 +1,31 @@
+name: gatsby deploy // gatsby 배포 자동화
+
+on:
+  push:
+    branches: [main] // main 브랜치에 push 할 때마다 아래의 jobs를 실행
+
+jobs:
+  deploy:
+    name: deploy //jobs flow의 이름
+    runs-on: ubuntu-latest //실행환경
+
+    steps: // 아래의 순서대로 action이 실행됨
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: packages install
+        run: npm install
+
+      - name: gatsby build
+        run: npm build
+        env:
+          # API_KEY 에는 자신이 secret을 생성할 때 설정한 이름으로 넣어야 한다
+          GH_API_KEY: ${{ secrets.API_KEY }}
+
+      - name: deploy
+        uses: maxheld83/ghpages@v0.2.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # API_KEY 에는 자신이 secret을 생성할 때 설정한 이름으로 넣어야 한다
+          GH_PAT: ${{ secrets.API_KEY }}
+          BUILD_DIR: 'public/'
