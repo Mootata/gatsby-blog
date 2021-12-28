@@ -1,15 +1,15 @@
-name: gatsby deploy // gatsby 배포 자동화
+name: gatsby deploy # gatsby 배포 자동화
 
 on:
   push:
-    branches: [main] // main 브랜치에 push 할 때마다 아래의 jobs를 실행
+    branches: [main] # main 브랜치에 push 할 때마다 아래의 jobs를 실행
 
 jobs:
   deploy:
-    name: deploy //jobs flow의 이름
+    name: deploy #jobs flow의 이름
     runs-on: ubuntu-latest //실행환경
 
-    steps: // 아래의 순서대로 action이 실행됨
+    steps: # 아래의 순서대로 action이 실행됨
       - name: checkout code
         uses: actions/checkout@v2
 
