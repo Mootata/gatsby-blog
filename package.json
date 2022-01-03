@@ -76,7 +76,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "https://github.com/Mootata?tab=repositories"
+    "url": "https://github.com/Mootata/mootata.github.io"
   },
   "scripts": {
     "post": "gatsby-post-gen",
