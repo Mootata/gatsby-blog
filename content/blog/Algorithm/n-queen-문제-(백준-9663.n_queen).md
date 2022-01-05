@@ -43,4 +43,4 @@ print(case)
 
 ## N Queen 문제의 특징
 
-<!-- ![alt text](<https://github.com/Mootata/mootata.github.io/tree/main/content/assets/Algorithm/`n-queen-문제-(백준-9663.n_queen)`/4queens.PNG> '4_queens') -->
+![alt text](.../assets/4queens.PNG '4_queens')
