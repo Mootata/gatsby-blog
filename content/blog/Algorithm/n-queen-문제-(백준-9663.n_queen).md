@@ -43,4 +43,4 @@ print(case)
 
 ## N Queen 문제의 특징
 
-![alt text](.../assets/4queens.PNG '4_queens')
+![alt text](https://github.com/Mootata/mootata.github.io/blob/main/content/assets/4queens.PNG '4_queens')
