@@ -16,6 +16,7 @@
   padding-right: 1em;
   padding-left: 0.75em;
   border-left: 0.35em solid #0687f0;
+  white-space: pre;
 }
 
 blockquote {
@@ -59,6 +60,7 @@ pre[class*='language-'] {
   margin: 1.5em 0;
   overflow: auto;
   border-radius: 0.6em;
+  white-space: pre;
 }
 
 :not(pre) > code[class*='language-'],
